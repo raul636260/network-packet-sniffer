@@ -1,3 +1,22 @@
+# network_sniffer_luxury.py
+#
+# Requirements:
+#   pip install scapy matplotlib requests
+# Optional (for IDS): pip install scikit-learn joblib
+# Optional (for gradient background): pip install pillow
+#
+# Features:
+# - Tkinter GUI Network Sniffer (Scapy)
+# - Collapsible sidebar with tooltips
+# - Luxury dark theme (Satin Black + Gold)
+# - Start/Stop toggle button for sniffing
+# - IDS with toggle button (Isolation Forest, if available)
+# - Traffic Analytics pie chart with legend (no overlapping labels)
+# - Device details view with on-demand:
+#       * MAC Vendor lookup (buttons)
+#       * IP Geolocation lookup (button)
+# - Vendor info cached and used in main table AFTER lookup
+
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
 from scapy.all import sniff, ARP, IP, Ether, DNS, DNSQR
